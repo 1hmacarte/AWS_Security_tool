@@ -1,0 +1,266 @@
+
+    <html>
+    <head>
+        <title>AWS Security Assessment Dashboard</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+            }
+            h1, h2 {
+                text-align: center;
+            }
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                margin-top: 20px;
+            }
+            th, td {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+            }
+            li {
+                margin-bottom: 5px;
+            }
+            .service {
+                font-weight: bold;
+                margin-top: 20px;
+            }
+            .no-issues {
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>AWS Security Assessment Dashboard</h1>
+        <h2>Assessment Date: 2024-03-21 08:53:00</h2>
+
+        
+            <div class="service">iam</div>
+            
+                <table>
+                    <tr>
+                        <th>Check</th>
+                        <th>Details</th>
+                        <th>Documentation</th>
+                    </tr>
+                    
+                        <tr>
+                            <td>Unused IAM Users</td>
+                            <td>
+                                
+                                    <span class="no-issues">No issues found</span>
+                                
+                            </td>
+                            <td><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_manage.html">Documentation</a></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>Inactive IAM Users (more than 90 days)</td>
+                            <td>
+                                
+                                    <span class="no-issues">No issues found</span>
+                                
+                            </td>
+                            <td><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_manage.html">Documentation</a></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>IAM Users without MFA</td>
+                            <td>
+                                
+                                    <ul>
+                                        
+                                            <li>luxxy-covid-testing-system-pt-app1</li>
+                                        
+                                            <li>policytrouble</li>
+                                        
+                                            <li>sa-scout</li>
+                                        
+                                            <li>terraform-pt-1</li>
+                                        
+                                            <li>test-aws-assessment</li>
+                                        
+                                    </ul>
+                                
+                            </td>
+                            <td><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html">Documentation</a></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>IAM Users with Privileged Permissions</td>
+                            <td>
+                                
+                                    <ul>
+                                        
+                                            <li>Hiago (SystemAdministrator)</li>
+                                        
+                                            <li>Hiago (AdministratorAccess)</li>
+                                        
+                                            <li>Hiago (Billing)</li>
+                                        
+                                            <li>Hiago (DatabaseAdministrator)</li>
+                                        
+                                            <li>Hiago (NetworkAdministrator)</li>
+                                        
+                                            <li>luxxy-covid-testing-system-pt-app1 (AmazonS3FullAccess)</li>
+                                        
+                                            <li>policytrouble (IAMUserChangePassword)</li>
+                                        
+                                            <li>terraform-pt-1 (AmazonS3FullAccess)</li>
+                                        
+                                            <li>test-aws-assessment (AmazonAppStreamFullAccess)</li>
+                                        
+                                            <li>test-aws-assessment (IAMUserChangePassword)</li>
+                                        
+                                    </ul>
+                                
+                            </td>
+                            <td><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html">Documentation</a></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>IAM Groups with Privileged Access</td>
+                            <td>
+                                
+                                    <ul>
+                                        
+                                            <li>_AWS-Admins (AdministratorAccess)</li>
+                                        
+                                            <li>_AWS-Admins (Billing)</li>
+                                        
+                                            <li>_AWS-Admins (AWSBillingConductorFullAccess)</li>
+                                        
+                                    </ul>
+                                
+                            </td>
+                            <td><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html">Documentation</a></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>Unused IAM Policies (unused for more than 30 days)</td>
+                            <td>
+                                
+                                    <ul>
+                                        
+                                            <li> (Testepolicy1)</li>
+                                        
+                                            <li> (IAM-list)</li>
+                                        
+                                    </ul>
+                                
+                            </td>
+                            <td><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html">Documentation</a></td>
+                        </tr>
+                    
+                </table>
+            
+        
+            <div class="service">cloudtrail</div>
+            
+                <p class="no-issues">No issues found</p>
+            
+        
+            <div class="service">vpc_client</div>
+            
+                <table>
+                    <tr>
+                        <th>Check</th>
+                        <th>Details</th>
+                        <th>Documentation</th>
+                    </tr>
+                    
+                        <tr>
+                            <td></td>
+                            <td>
+                                
+                                    <span class="no-issues">No issues found</span>
+                                
+                            </td>
+                            <td><a href="">Documentation</a></td>
+                        </tr>
+                    
+                </table>
+            
+        
+            <div class="service">kms</div>
+            
+                <table>
+                    <tr>
+                        <th>Check</th>
+                        <th>Details</th>
+                        <th>Documentation</th>
+                    </tr>
+                    
+                        <tr>
+                            <td></td>
+                            <td>
+                                
+                                    <span class="no-issues">No issues found</span>
+                                
+                            </td>
+                            <td><a href="">Documentation</a></td>
+                        </tr>
+                    
+                </table>
+            
+        
+            <div class="service">secrets_manager</div>
+            
+                <p class="no-issues">No issues found</p>
+            
+        
+            <div class="service">s3</div>
+            
+                <p class="no-issues">No issues found</p>
+            
+        
+            <div class="service">waf</div>
+            
+                <p class="no-issues">No issues found</p>
+            
+        
+            <div class="service">cloudwatch</div>
+            
+                <table>
+                    <tr>
+                        <th>Check</th>
+                        <th>Details</th>
+                        <th>Documentation</th>
+                    </tr>
+                    
+                        <tr>
+                            <td></td>
+                            <td>
+                                
+                                    <span class="no-issues">No issues found</span>
+                                
+                            </td>
+                            <td><a href="">Documentation</a></td>
+                        </tr>
+                    
+                        <tr>
+                            <td></td>
+                            <td>
+                                
+                                    <span class="no-issues">No issues found</span>
+                                
+                            </td>
+                            <td><a href="">Documentation</a></td>
+                        </tr>
+                    
+                </table>
+            
+        
+    </body>
+    </html>
+    
