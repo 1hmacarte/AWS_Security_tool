@@ -28,4 +28,6 @@ Como a Ferramenta Funciona
 
 A ferramenta se conecta à sua conta AWS usando suas credenciais e coleta informações sobre os recursos configurados. Em seguida, realiza uma análise detalhada com base nas melhores práticas de segurança da AWS e gera um relatório em formato HTML com uma visão geral dos resultados. O relatório destaca potenciais problemas de segurança e fornece links para a documentação oficial da AWS para cada problema identificado. 
 
+Próximos passos : https://github.com/1hmacarte/AWS_Security_tool/blob/master/README.md
+
  
