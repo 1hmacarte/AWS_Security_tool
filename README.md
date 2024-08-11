@@ -32,7 +32,7 @@ Próximos passos : https://github.com/1hmacarte/AWS_Security_tool/blob/master/RE
 
 ![image](https://github.com/user-attachments/assets/2e304244-b3d1-4b3a-ab23-8bb8d3c60697)
 
-![image]([https://github.com/user-attachments/assets/2e304244-b3d1-4b3a-ab23-8bb8d3c60697](https://github.com/1hmacarte/assets/blob/drwa/AWS%20Assessment%20dash1.PNG))
+![image](https://github.com/1hmacarte/assets/blob/drwa/AWS%20Assessment%20dash1.PNG)
 
 
 
