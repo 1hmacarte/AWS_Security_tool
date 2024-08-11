@@ -1,8 +1,8 @@
-# AWS Security Assessment Tool
+# CloudAssess
 
 ## Visão Geral
 
-A **AWS Security Assessment Tool** é uma ferramenta projetada para realizar uma avaliação abrangente das configurações de segurança na sua conta AWS. Ela verifica uma série de serviços AWS, incluindo IAM, CloudTrail, VPC, KMS, Secrets Manager, S3, WAF e CloudWatch, e gera um relatório detalhado com recomendações e melhores práticas de segurança.
+A **CloudAssess** é uma ferramenta projetada para realizar uma avaliação abrangente das configurações de segurança na sua conta AWS. Ela verifica uma série de serviços AWS, incluindo IAM, CloudTrail, VPC, KMS, Secrets Manager, S3, WAF e CloudWatch, e gera um relatório detalhado com recomendações e melhores práticas de segurança.
 
 ## Funcionalidades
 
