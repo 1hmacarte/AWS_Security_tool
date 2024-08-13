@@ -26,9 +26,8 @@ A **CloudAssess** é uma ferramenta projetada para realizar uma avaliação abra
 1. Clone o repositório:
 
     ```bash
-    git clone https://github.com/seu-usuario/aws-security-assessment-tool.git
-    cd aws-security-assessment-tool
-    ```
+    git clone https://github.com/1hmacarte/AWS_Security_tool.git
+    cd aws-security-assessment-
 
 2. Instale as dependências:
 
