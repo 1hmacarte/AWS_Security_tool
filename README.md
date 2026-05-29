@@ -1,4 +1,5 @@
 # CloudAssess
+![alt text](image.png)
 
 ## Visão Geral
 
