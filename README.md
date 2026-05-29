@@ -24,12 +24,24 @@ A **CloudAssess** é uma ferramenta projetada para realizar uma avaliação abra
 ## Instalação
 
 1. Clone o repositório:
+1. Clone o repositório:
 
     ```bash
     git clone https://github.com/1hmacarte/AWS_Security_tool.git
-    cd aws-security-assessment
+    cd AWS_Security_tool
+    ```
 
-2. Instale as dependências:
+2. (Opcional) Crie e ative um ambiente virtual:
+
+    ```bash
+    python -m venv .venv
+    # Windows
+    .venv\Scripts\Activate.ps1
+    # Linux / macOS
+    source .venv/bin/activate
+    ```
+
+3. Instale as dependências:
 
     ```bash
     pip install -r requirements.txt
@@ -42,7 +54,7 @@ A **CloudAssess** é uma ferramenta projetada para realizar uma avaliação abra
 1. Execute a ferramenta:
 
     ```bash
-    python assess.py
+    python src/aws_security_assessment.py
     ```
 
 2. Insira suas credenciais AWS e a região desejada quando solicitado.
@@ -52,8 +64,16 @@ A **CloudAssess** é uma ferramenta projetada para realizar uma avaliação abra
 4. Abra o relatório no navegador:
 
     ```bash
-    open aws_security_dashboard.html
+    start aws_security_dashboard.html
     ```
+
+## Estrutura
+
+- `src/aws_security_assessment.py`: ponto de entrada da aplicação.
+- `src/config.py`: leitura das credenciais e criação dos clientes AWS.
+- `src/services/`: verificações por serviço AWS.
+- `src/reporting.py`: renderização e abertura do relatório HTML.
+- `src/templates/aws_security_dashboard.html`: template do dashboard.
 
 ## Recomendações
 

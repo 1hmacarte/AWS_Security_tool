@@ -1,0 +1,103 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>AWS Security Assessment Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            color: #1f2937;
+            background: #f8fafc;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 16px;
+            box-shadow: 0 4px 18px rgba(15, 23, 42, 0.08);
+        }
+
+        .service {
+            font-weight: bold;
+            margin-top: 24px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 16px;
+        }
+
+        th,
+        td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .no-issues {
+            color: green;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>AWS Security Assessment Dashboard</h1>
+        <h2>Assessment Date: {{ assessment_date }}</h2>
+
+        {% for service, findings in results.items() %}
+            <div class="service">{{ service }}</div>
+            {% if findings %}
+                <table>
+                    <tr>
+                        <th>Check</th>
+                        <th>Details</th>
+                        <th>Documentation</th>
+                    </tr>
+                    {% for finding in findings %}
+                        <tr>
+                            <td>{{ finding.check }}</td>
+                            <td>
+                                {% if finding.details %}
+                                    <ul>
+                                        {% for detail in finding.details %}
+                                            <li>{{ detail }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                {% else %}
+                                    <span class="no-issues">No issues found</span>
+                                {% endif %}
+                            </td>
+                            <td><a href="{{ finding.documentation_link }}">Documentation</a></td>
+                        </tr>
+                    {% endfor %}
+                </table>
+            {% else %}
+                <p class="no-issues">No issues found</p>
+            {% endif %}
+        {% endfor %}
+    </div>
+</body>
+</html>
